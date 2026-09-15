@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>10 Prompts de Criativos que Vendem</title>
+<style>
+:root{--bg:#070707;--card:#0d0d0c;--gold:#efc76d;--gold2:#c58d2a;--text:#f7f3e8;--muted:#aaa59a;--line:rgba(239,199,109,.24)}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:radial-gradient(circle at 50% 0,rgba(239,199,109,.11),transparent 28%),var(--bg);color:var(--text);font-family:Arial,Helvetica,sans-serif;line-height:1.5}
+.wrap{width:min(900px,calc(100% - 28px));margin:auto}
+.hero{padding:58px 0 28px;text-align:center}
+.tag{display:inline-block;padding:8px 13px;border:1px solid var(--line);border-radius:999px;color:var(--gold);font-size:11px;font-weight:900;letter-spacing:.09em}
+h1{max-width:860px;margin:20px auto 16px;font-family:Georgia,serif;font-size:clamp(38px,7vw,67px);line-height:1.02;letter-spacing:-.035em}
+h1 span,.gold{color:var(--gold)}
+.lead{max-width:720px;margin:auto;color:var(--muted);font-size:18px}
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;max-width:790px;margin:30px auto 0}
+.step{padding:17px;border:1px solid rgba(255,255,255,.07);border-radius:15px;background:#0e0e0d;text-align:left}
+.step b{display:block;color:var(--gold);margin-bottom:4px;font-size:13px}
+.step span{color:var(--muted);font-size:14px}
+.card{max-width:650px;margin:24px auto 70px;padding:28px;border:1px solid var(--line);border-radius:22px;background:linear-gradient(180deg,rgba(239,199,109,.055),transparent),var(--card);box-shadow:0 24px 70px #0008}
+.card h2{margin:0;text-align:center;font-family:Georgia,serif;font-size:30px}
+.card>p{margin:8px auto 22px;text-align:center;color:var(--muted)}
+label{display:block;margin:12px 0 6px;font-size:13px;font-weight:800}
+input{display:block;width:100%;min-height:52px;padding:14px;border:1px solid #2c2a25;border-radius:10px;background:#080808;color:#fff;font-size:16px;outline:none;-webkit-appearance:none}
+input:focus{border-color:var(--gold2)}
+.btn{display:flex;width:100%;min-height:60px;margin-top:19px;padding:14px 16px;align-items:center;justify-content:center;border:0;border-radius:11px;background:linear-gradient(135deg,var(--gold),var(--gold2));color:#111;font-size:15px;font-weight:950;text-align:center;cursor:pointer;-webkit-appearance:none;text-decoration:none}
+.note{margin-top:11px;color:#777268;font-size:11px;text-align:center}
+.fallback{margin-top:16px;text-align:center;font-size:13px;color:var(--muted)}
+.fallback a{color:var(--gold);font-weight:800}
+.footer{padding:0 0 28px;text-align:center;color:#625f58;font-size:12px}
+iframe{display:none;width:0;height:0;border:0}
+@media(max-width:650px){
+ .hero{padding-top:38px}
+ h1{font-size:39px}
+ .lead{font-size:16px}
+ .steps{grid-template-columns:1fr}
+ .card{padding:21px;margin-bottom:45px}
+ .btn{font-size:14px}
+}
+</style>
+</head>
+<body>
+<section class="hero">
+ <div class="wrap">
+  <div class="tag">MATERIAL GRATUITO PARA PERSONAL TRAINERS</div>
+  <h1>SUA ARTE FOI FEITA COM IA.<br><span>ELA NÃO PRECISA GRITAR ISSO.</span></h1>
+  <p class="lead">Separei 10 prompts de criativos que vendem para você produzir artes mais limpas, profissionais e relevantes.</p>
+  <div class="steps">
+   <div class="step"><b>01. PREENCHA</b><span>Nome, WhatsApp e seu melhor e-mail.</span></div>
+   <div class="step"><b>02. ENTRE NO GRUPO</b><span>Ao tocar no botão, você será direcionado ao WhatsApp.</span></div>
+   <div class="step"><b>03. ENVIE “PROMPT”</b><span>No grupo, envie a palavra PROMPT para receber o material.</span></div>
+  </div>
+ </div>
+</section>
+
+<div class="wrap">
+ <section class="card">
+  <h2>Receba os <span class="gold">10 prompts</span></h2>
+  <p>Preencha seus dados e entre no grupo para receber os prompts de criativos que vendem.</p>
+
+  <form id="leadForm" action="https://script.google.com/macros/s/AKfycbwXG0kab3g_xgc1zKjmnrlEPqGuGlf6DdkGJ6Zv-TmWfwcJh-6KZkh5xbUoT_ZvlmpP/exec" method="POST" target="lead_receiver">
+   <label for="nome">Seu nome</label>
+   <input id="nome" name="nome" autocomplete="name" required placeholder="Seu nome">
+
+   <label for="email">Seu melhor e-mail</label>
+   <input id="email" name="email" type="email" inputmode="email" autocomplete="email" required placeholder="voce@email.com">
+
+   <label for="whatsapp">WhatsApp com DDD</label>
+   <input id="whatsapp" name="whatsapp" type="tel" inputmode="tel" autocomplete="tel" required placeholder="(31) 99999-9999">
+
+   <a class="btn" id="groupBtn" href="https://chat.whatsapp.com/G5yX8kDfANS1ZLJlwgjeeR?s=cl&p=i&mlu=0&ilr=4" target="_blank" rel="noopener">ENTRAR NO GRUPO PARA RECEBER OS PROMPTS DE CRIATIVOS QUE VENDEM</a>
+
+   <div class="note">Ao continuar, seus dados serão enviados para nossa lista de contatos.</div>
+   <div class="fallback">Se o WhatsApp não abrir automaticamente, <a href="https://chat.whatsapp.com/G5yX8kDfANS1ZLJlwgjeeR?s=cl&p=i&mlu=0&ilr=4" target="_blank" rel="noopener">toque aqui para entrar no grupo</a>.</div>
+  </form>
+ </section>
+</div>
+
+<iframe name="lead_receiver" title="Envio do cadastro"></iframe>
+<div class="footer">10 Prompts IA • Master Class</div>
+
+<script>
+(function(){
+  var form = document.getElementById("leadForm");
+  var btn = document.getElementById("groupBtn");
+  var endpoint = "https://script.google.com/macros/s/AKfycbwXG0kab3g_xgc1zKjmnrlEPqGuGlf6DdkGJ6Zv-TmWfwcJh-6KZkh5xbUoT_ZvlmpP/exec";
+
+  // O botão é um link real do WhatsApp. Assim, a abertura do grupo
+  // não depende de redirecionamento JavaScript, inclusive no iPhone.
+  btn.addEventListener("click", function(e){
+    if (!form.checkValidity()) {
+      e.preventDefault();
+      form.reportValidity();
+      return;
+    }
+
+    var data = new FormData();
+    data.append("nome", document.getElementById("nome").value.trim());
+    data.append("email", document.getElementById("email").value.trim());
+    data.append("whatsapp", document.getElementById("whatsapp").value.trim());
+
+    // Envia o lead em segundo plano sem segurar a abertura do WhatsApp.
+    try {
+      if (navigator.sendBeacon) {
+        navigator.sendBeacon(endpoint, data);
+      } else {
+        fetch(endpoint, {
+          method: "POST",
+          body: data,
+          mode: "no-cors",
+          keepalive: true
+        }).catch(function(){});
+      }
+    } catch (_) {}
+  });
+
+  // Evita o envio tradicional do formulário caso o usuário pressione Enter.
+  form.addEventListener("submit", function(e){
+    e.preventDefault();
+    btn.click();
+  });
+})();
+</script>
+</body>
+</html>
