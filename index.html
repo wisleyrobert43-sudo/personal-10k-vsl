@@ -76,7 +76,7 @@
     }
 
     .video-shell{
-      width:min(520px,100%);
+      width:min(920px,100%);
       margin:38px auto 0;
       padding:10px;
       border:1px solid var(--line);
@@ -85,13 +85,13 @@
       box-shadow:var(--shadow);
     }
 
-    .video-shell video{
+    .video-shell iframe{
       display:block;
       width:100%;
-      aspect-ratio:512/910;
+      aspect-ratio:16/9;
+      border:0;
       border-radius:18px;
       background:#000;
-      object-fit:cover;
     }
 
     .video-note{
@@ -294,7 +294,7 @@
       h1{font-size:38px}
       .sub{font-size:16px}
       .video-shell{border-radius:20px;padding:7px}
-      .video-shell video{border-radius:14px}
+      .video-shell iframe{border-radius:14px}
       .cta{font-size:15px;min-height:58px}
       .card{padding:24px}
       .final-box{padding:34px 20px}
@@ -320,10 +320,13 @@
         </p>
 
         <div class="video-shell">
-          <video id="vsl" controls playsinline preload="metadata">
-            <source src="vsl-personal-10k-web.mp4" type="video/mp4" />
-            Seu navegador não suporta reprodução de vídeo.
-          </video>
+          <iframe
+            id="vsl"
+            src="https://drive.google.com/file/d/1dNtQiVy5u3ygYC_EEalhD8PpthRhgV_8/preview"
+            title="Aula Sistema Personal 10K"
+            allow="autoplay; fullscreen"
+            allowfullscreen>
+          </iframe>
           <div class="video-note">Dê o play e assista até o final.</div>
         </div>
 
@@ -413,16 +416,13 @@
 
   <script>
     const sticky = document.getElementById('stickyCta');
-    const video = document.getElementById('vsl');
 
     window.addEventListener('scroll', () => {
       if (window.scrollY > 700) sticky.classList.add('show');
       else sticky.classList.remove('show');
     });
 
-    video.addEventListener('play', () => {
-      setTimeout(() => sticky.classList.add('show'), 12000);
-    }, { once: true });
+    setTimeout(() => sticky.classList.add('show'), 12000);
   </script>
 </body>
 </html>
